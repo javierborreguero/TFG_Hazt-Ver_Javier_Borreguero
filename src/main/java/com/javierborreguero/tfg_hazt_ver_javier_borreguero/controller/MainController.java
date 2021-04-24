@@ -12,8 +12,14 @@ public class MainController {
     public String aboutMe() {
         return "Main_Screen";
     }
+
     @GetMapping("/Projects")
-    public String MyProjects(){
+    public String MyProjects() {
         return "My_Projects";
+    }
+
+    @GetMapping("/Contact")
+    public String ContactMe() {
+        return "Contact_Me";
     }
 }

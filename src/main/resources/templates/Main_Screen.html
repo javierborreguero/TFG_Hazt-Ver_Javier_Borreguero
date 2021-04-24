@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- To ensure proper rendering and touch zooming in mobile phone-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hazt-Ver</title>
     <link href="/Styles.css" rel="stylesheet">
 </head>
 <body>
+<div class="menu-toggle" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
 <ul>
     <li>
         <a href="#">
@@ -44,4 +49,19 @@
     </li>
 </ul>
 </body>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+
+    $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+            $('ul').toggleClass('active')
+        })
+    })
+</script>
 </html>

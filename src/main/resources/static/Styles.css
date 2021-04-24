@@ -7,7 +7,7 @@ body {
 
 ul {
     position: absolute;
-    top: 5.5%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
@@ -91,4 +91,86 @@ ul li a .menu-option span:before {
 
 ul li a:hover .menu-option span:before {
     transform: translateY(20px);
+}
+
+/*Menu*/
+
+.menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    top: 7%;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*Responsive*/
+@media (max-width: 650px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    ul {
+        top: 11.5%;
+        left: 52%;
+        width: 90%;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s;
+        transform: translate(-50%, -50%) scaleY(0);
+    }
+
+    ul.active {
+        transform: translate(-50%, -50%) scaleY(1);
+    }
+
+    ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 10px 0px;
+        display: flex;
+    }
+
+    ul li:last-child {
+        border-bottom: none;
+    }
+
+    ul li a {
+        padding: 0px 20px;
+    }
+
+    ul li a .icon {
+        display: inline-block;
+        float: left;
+        margin: 0px auto;
+
+    }
+
+    ul li a .menu-option {
+        width: auto;
+        display: inline-block;
+        margin: 10px;
+    }
 }
