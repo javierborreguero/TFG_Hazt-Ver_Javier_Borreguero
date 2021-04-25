@@ -1,176 +1,96 @@
-body {
-    max-width: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-    background-color: #e91e63;
+/* Genérico */
+:root {
+    --el-color: #333;
 }
 
-ul {
-    position: absolute;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.m-t {
+    margin-top: 150px;
+}
+
+.m-b {
+    margin-bottom: 100px;
+}
+
+/* Afecta a todos los elementos que forman la web */
+* {
     margin: 0px;
-    padding: 20px 0px;
-    background-color: #fff;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, .3);
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-ul li {
-    list-style: none;
-    text-align: center;
-    display: block;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+/* Cambios que afectan al body */
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-ul li:last-child {
-    border-right: none;
+/* Container */
+.container {
+    width: 70%;
+    margin: auto;
 }
 
-ul li a {
+/* Cambio que a fectan a los h, a y p*/
+h1, h2, h3, h4, a, p {
+    color: var(--el-color);
+}
+
+/* a */
+a {
     text-decoration: none;
-    padding: 0px 50px;
-    display: block;
 }
 
-ul li a .icon {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    overflow: hidden;
-    margin: 0px auto 10px;
+/* h1 */
+h1 {
+    font-size: 2.5rem;
 }
 
-ul li a .icon .fa {
-    width: 100%;
-    height: 100%;
-    line-height: 40px;
-    font-size: 34px;
-    transition: 0.5s;
-    color: #000;
+/* h2 */
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
-ul li a .icon .fa:last-child {
-    color: #e91e63;
+/* h3 */
+h3 {
+    font-weight: 600;
 }
 
-/*Efecto de transición*/
-ul li a:hover .icon .fa {
-    transform: translateY(-100%);
-
+/* p */
+p {
+    font-weight: 300;
 }
 
-ul li a .menu-option {
-    position: relative;
-    height: 20px;
-    width: 100%;
-    display: block;
+/* Header*/
+nav {
+    height: 100px;
 }
 
-ul li a .menu-option span {
-    display: block;
-    position: relative;
-    color: #000;
-    font-size: 18px;
-    line-height: 20px;
-    transition: 0.5s;
-    overflow: hidden;
+nav h2 {
+    float: left;
+    display: inline;
+    line-height: 100px;
 }
 
-ul li a .menu-option span:before {
-    content: attr(data-text);
-    position: absolute;
-    top: -100%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    color: #e91e63;
+nav ul {
+    float: right;
+    line-height: 100px;
 }
 
-ul li a:hover .menu-option span:before {
-    transform: translateY(20px);
-}
-
-/*Menu*/
-
-.menu-toggle {
+nav ul li {
     display: inline-block;
-    cursor: pointer;
-    top: 7%;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-    display: none;
+    margin: 0px 25px;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+nav ul li a {
+    text-transform: uppercase;
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-/*Responsive*/
-@media (max-width: 650px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    ul {
-        top: 11.5%;
-        left: 52%;
-        width: 90%;
-        display: block;
-        overflow: hidden;
-        transition: 0.5s;
-        transform: translate(-50%, -50%) scaleY(0);
-    }
-
-    ul.active {
-        transform: translate(-50%, -50%) scaleY(1);
-    }
-
-    ul li {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        padding: 10px 0px;
-        display: flex;
-    }
-
-    ul li:last-child {
-        border-bottom: none;
-    }
-
-    ul li a {
-        padding: 0px 20px;
-    }
-
-    ul li a .icon {
-        display: inline-block;
-        float: left;
-        margin: 0px auto;
-
-    }
-
-    ul li a .menu-option {
-        width: auto;
-        display: inline-block;
-        margin: 10px;
-    }
+/* Página actual*/
+.ui-state-active {
+    background-color: #eb7620;
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px 25px;
 }
