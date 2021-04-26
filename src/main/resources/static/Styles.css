@@ -1,96 +1,48 @@
-/* Genérico */
-:root {
-    --el-color: #333;
-}
-
-.m-t {
-    margin-top: 150px;
-}
-
-.m-b {
-    margin-bottom: 100px;
-}
-
-/* Afecta a todos los elementos que forman la web */
+/* Configuración general de la web */
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Cambios que afectan al body */
-body {
-    font-family: "Poppins", sans-serif;
+/*Configuración de la imagen*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/portada.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-/* Container */
-.container {
-    width: 70%;
-    margin: auto;
-}
-
-/* Cambio que a fectan a los h, a y p*/
-h1, h2, h3, h4, a, p {
-    color: var(--el-color);
-}
-
-/* a */
-a {
-    text-decoration: none;
-}
-
-/* h1 */
-h1 {
-    font-size: 2.5rem;
-}
-
-/* h2 */
-h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-/* h3 */
-h3 {
-    font-weight: 600;
-}
-
-/* p */
-p {
-    font-weight: 300;
-}
-
-/* Header*/
+/* Top nav bar y menú de opciones*/
 nav {
-    height: 100px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-nav h2 {
-    float: left;
-    display: inline;
-    line-height: 100px;
+nav img {
+    width: 105px;
 }
 
-nav ul {
-    float: right;
-    line-height: 100px;
+.nav-links {
+    flex: 1;
+    text-align: right;
 }
 
-nav ul li {
+.nav-links ul li {
+    list-style: none;
     display: inline-block;
-    margin: 0px 25px;
+    padding: 8px 12px;
+    position: relative;
 }
 
-nav ul li a {
-    text-transform: uppercase;
+.nav-links ul li {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
 }
 
-/* Página actual*/
-.ui-state-active {
-    background-color: #eb7620;
-    color: #fff;
-    border-radius: 20px;
-    padding: 7px 25px;
-}
