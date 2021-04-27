@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
           rel="stylesheet">
-    <link href="/Styles.css" rel="stylesheet">
+    <link href="/style/Styles.css" rel="stylesheet">
     <link href="/images/webIcon.ico" rel="icon">
     <title>Hazt-Ver</title>
 </head>
@@ -21,8 +21,8 @@
 <section class="header">
     <nav>
         <a class> <img src="images/webIcon.ico"></a>
-        <div class="nav-links">
-            <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li href="#">Inicio</li>
                 <li href="#">Proyectos</li>
@@ -30,7 +30,7 @@
                 <li href="#">Contacto</li>
             </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
     </nav>
     <!-- Presentación -->
     <div class="about-me">
@@ -39,5 +39,6 @@
         <a href="#" class="learn-more">Saber más</a>
     </div>
 </section>
+<script src="/js/Script.js" charset="" UTF-8></script>
 </body>
 </html>
