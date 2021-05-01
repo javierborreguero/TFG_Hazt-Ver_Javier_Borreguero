@@ -67,7 +67,7 @@ nav img {
 
 /* ----------------------------------- */
 /* Presentación */
-.about-me {
+.reporting {
     width: 90%;
     color: white;
     position: absolute;
@@ -77,11 +77,11 @@ nav img {
     text-align: center;
 }
 
-.about-me h1 {
+.reporting h1 {
     font-size: 62px;
 }
 
-.about-me p {
+.reporting p {
     margin: 10px 0px 40px;
     font-size: 16px;
     color: white;
@@ -99,7 +99,7 @@ nav img {
     cursor: pointer;
 }
 
-/* Al pasar el ratón por encima, el botón se rellena de color (se mantiene oculto)*/
+/* Al pasar el ratón por encima, el botón se rellena de color*/
 .learn-more:hover {
     border: 1px solid white;
     background: darkgrey;
@@ -108,6 +108,89 @@ nav img {
 }
 
 /* ----------------------------------- */
+/* Sección Sobre mí */
+.about-me {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-me h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.about-me p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.about-me-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-me-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+#about-me-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/webIcon.ico");
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+/* --------------- */
+/* --- Trayectoria --- */
+.trajectory {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.trajectory h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* --- Experiencia laboral*/
+.experience-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experience-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+#work-experience-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/webIcon.ico");
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+/* ------------------- */
 /* --- Meú lateral --- */
 nav .fa {
     display: none;
@@ -116,7 +199,7 @@ nav .fa {
 /* ------------------ */
 /* ---Responsive--- */
 @media (max-width: 600px) {
-    .about-me h1 {
+    .reporting h1 {
         font-size: 20px;
     }
 
