@@ -145,9 +145,10 @@ nav img {
 }
 
 #about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/webIcon.ico");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/personal.jpg");
     background-position: initial;
-    background-size: cover;
+    background-size: 150px;
+
     background-repeat: no-repeat;
     position: center;
 }
@@ -167,27 +168,34 @@ nav img {
 }
 
 /* --- Experiencia laboral*/
-.experience-row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
+.experience {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
 }
 
-.experience-col {
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
+.my-experience {
     box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
-#work-experience-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/webIcon.ico");
-    background-position: initial;
-    background-size: cover;
+#my-experience-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
     background-repeat: no-repeat;
-    position: center;
+    background-size: cover;
+    background-position: right;
+}
+
+.experience:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* ------------------- */
@@ -238,6 +246,10 @@ nav .fa {
         padding: 30px;
     }
 
+    .my-experience {
+        width: 100%;
+    }
 }
+
 
 /*-----------------*/
