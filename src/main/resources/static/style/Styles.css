@@ -130,27 +130,34 @@ nav img {
 }
 
 .about-me-row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
 }
 
 .about-me-col {
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
     box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 #about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/personal.jpg");
-    background-position: initial;
-    background-size: 150px;
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
     background-repeat: no-repeat;
-    position: center;
+    background-size: cover;
+    background-position: right;
+    margin-top: 15px;
+}
+
+.about-me-row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* --------------- */
@@ -159,12 +166,20 @@ nav img {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 250px;
 }
 
 .trajectory h1 {
     font-size: 36px;
     font-weight: 600;
+}
+
+.trajectory p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
 
 /* --- Experiencia laboral*/
@@ -175,7 +190,7 @@ nav img {
     margin-bottom: 10px;
 }
 
-.my-experience {
+.work-experience {
     box-sizing: border-box;
     float: left;
     width: 200px;
@@ -185,14 +200,48 @@ nav img {
     border-radius: 10px;
 }
 
-#my-experience-1 {
+#first-work-experience {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    margin-top: 15px;
 }
 
 .experience:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Estudios --- */
+.studies {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
+    padding-top: 250px;
+}
+
+.studies-experience {
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#my-studies-experience {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-top: 15px;
+}
+
+.studies:after {
     content: "";
     display: table;
     clear: both;
@@ -246,8 +295,22 @@ nav .fa {
         padding: 30px;
     }
 
-    .my-experience {
+    .trajectory {
+        padding-top: 300px;
+    }
+
+    .work-experience {
         width: 100%;
+    }
+
+    .about-me-col {
+        width: 100%;
+    }
+    .studies-experience {
+        width: 100%;
+    }
+    .studies{
+        padding-top: 300px;
     }
 }
 
