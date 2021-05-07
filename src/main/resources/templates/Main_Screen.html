@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Para garantizar una representación adecuada y zoom táctil en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para emplear diferentes iconos -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Para emplear diferentes estilos de fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="/style/Styles.css" rel="stylesheet">
+    <link href="/images/webIcon.ico" rel="icon">
+    <title>Hazt-Ver</title>
 </head>
 <body>
-
+<!-- Sección para la imagen, la barra de navegación y la presentación -->
+<section class="header">
+    <nav>
+        <a class> <img src="/images/webIcon.ico"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li href="#">Inicio</li>
+                <li href="#">Proyectos</li>
+                <li href="#">Currículum</li>
+                <li href="#">Contacto</li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+    </nav>
+    <!-- Introducción -->
+    <div class="reporting">
+        <h1>Javier Borreguero</h1>
+        <p>Desarrollador de software y amante de las nuevas tecnologías</p>
+        <a href="#" class="learn-more">Saber más</a>
+    </div>
+</section>
+<!--Sección sobre mí-->
+<section class="about-me">
+    <h1>Sobre mí</h1>
+    <div class="about-me-row">
+        <div class="about-me-col" id="about-me-image">
+        </div>
+        <div class="about-me-col" th:each="personal : ${personalInfo}" id="about-me-image-description">
+            <h3 th:text="${personal.name}">Column 1</h3>
+            <p th:text="${personal.description}">Some text..</p>
+        </div>
+    </div>
+</section>
+<!-- Sección mi trayectoria-->
+<section class="trajectory">
+    <h1>Mi trayectoria</h1>
+    <!-- Experiencia laboral -->
+    <div class="experience">
+        <div class="work-experience" id="first-work-experience">
+        </div>
+        <div class="work-experience" id="first-work-experience-description">
+            <h3>Paradigma Digital</h3>
+            <p id="contract">Desarrollador de Software - Contrato en Prácticas</p>
+            <p>Primera experiencia laboral como desarrollador. Durante esta etapa estoy conociendo el día a día de una
+                consultora dedicada al desarrollo. Está siendo una etapa emocionante en la que estoy aprendiendo la
+                dinámica de trabajo y familiarizándome con nuevas tecnologías, pero sobre todo, me está permitiendo
+                aprender nuevas herramientas y metódicas de desarrollo potenciando los conocimientos aprendidos en el
+                aula.</p>
+        </div>
+    </div>
+    <!-- Educación -->
+    <div class="studies">
+        <div class="studies-experience" id="my-studies-experience">
+        </div>
+        <div class="studies-experience" id="my-studies-experience-description">
+            <h3>U-tad</h3>
+            <p id="u-tad-full-name">Centro Universitario de Tecnología y Arte Digital </p>
+            <p>U-tad es una univeridad puntera en el sector de la tecnología. Cuenta con profesores que además de
+                impartir sus clases en la univerdidad, son empleados en diferentes empresas privada. Brindando la
+                oportunidad de impartir una enseñanza adaptada a la constante evolución de la tecnología. En U-tad, se
+                imparte un enseñanza de calidad en la que priman valores como la constancia y el trabajo en equipo. </p>
+        </div>
+    </div>
+</section>
+<script src="/js/Script.js" charset="utf-8"></script>
 </body>
 </html>
