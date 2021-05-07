@@ -143,13 +143,16 @@ nav img {
     padding: 10px;
     height: 200px;
     margin-bottom: 10px;
-    border-radius: 10px;
+}
+
+#about-me-image-description {
+    width: 500px;
 }
 
 #about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/imagenJavier.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: right;
     margin-top: 15px;
 }
@@ -166,7 +169,7 @@ nav img {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 300px;
 }
 
 .trajectory h1 {
@@ -188,6 +191,7 @@ nav img {
     left: 35%;
     width: max-content;
     margin-bottom: 10px;
+    padding-top: 20px;
 }
 
 .work-experience {
@@ -198,6 +202,15 @@ nav img {
     height: 200px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+#first-work-experience-description {
+    width: 500px;
+}
+
+#contract {
+    font-weight: bold;
+    display: inline-block;
 }
 
 #first-work-experience {
@@ -220,7 +233,7 @@ nav img {
     left: 35%;
     width: max-content;
     margin-bottom: 10px;
-    padding-top: 250px;
+    padding-top: 300px;
 }
 
 .studies-experience {
@@ -233,10 +246,20 @@ nav img {
     border-radius: 10px;
 }
 
+#my-studies-experience-description {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#u-tad-full-name {
+    font-weight: bold;
+    display: inline-block;
+}
+
 #my-studies-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/aaaa.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: right;
     margin-top: 15px;
 }
@@ -295,6 +318,11 @@ nav .fa {
         padding: 30px;
     }
 
+    .about-me-col {
+        width: 100%;
+
+    }
+
     .trajectory {
         padding-top: 300px;
     }
@@ -303,16 +331,14 @@ nav .fa {
         width: 100%;
     }
 
-    .about-me-col {
-        width: 100%;
-    }
     .studies-experience {
         width: 100%;
     }
-    .studies{
+
+    .studies {
         padding-top: 300px;
     }
-}
 
+}
 
 /*-----------------*/
