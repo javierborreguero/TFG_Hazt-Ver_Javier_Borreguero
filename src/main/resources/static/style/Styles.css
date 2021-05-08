@@ -257,7 +257,7 @@ nav img {
 }
 
 #my-studies-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/aaaa.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/utad.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -299,6 +299,22 @@ nav .fa {
         text-align: left;
         z-index: 2;
         transition: 1s;
+    }
+
+    #start {
+        color: black;
+    }
+
+    #projects {
+        color: black;
+    }
+
+    #cv {
+        color: black;
+    }
+
+    #contact {
+        color: black;
     }
 
     /* Los iconos de menu y cerrar se muestran */
