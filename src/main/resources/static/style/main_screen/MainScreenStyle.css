@@ -10,7 +10,7 @@
 .header {
     min-height: 115vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/portada.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/portada.jpg");
     background-position: initial;
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ nav img {
 }
 
 #about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/imagenJavier.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/imagenJavier.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -214,7 +214,7 @@ nav img {
 }
 
 #first-work-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/paradigma.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -257,7 +257,7 @@ nav img {
 }
 
 #my-studies-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/utad.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/utad.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;

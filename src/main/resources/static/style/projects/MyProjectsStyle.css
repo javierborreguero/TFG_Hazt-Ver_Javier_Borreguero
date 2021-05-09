@@ -1,0 +1,195 @@
+/* ---Configuración general de la web--- */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------------------------- */
+/* ---Configuración de la imagen--- */
+.header {
+    min-height: 115vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/primeraportadaproyecto.jpg");
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+/* ----------------------------------- */
+/* Top nav bar y menú de opciones*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    cursor: pointer;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Cuando se pasa el ratón por encima de las opciones del menú, se subraya */
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: darkgrey;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* ----------------------------------- */
+/* --- Meú lateral --- */
+nav .fa {
+    display: none;
+}
+
+/* --------------- */
+/* --- Trayectoria --- */
+.projects {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.projects h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.projects p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.my-projects-row {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.my-projects-col {
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#first-project-description {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#battleShip {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#first-project-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/imagenJavier.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 15px;
+}
+
+.my-projects-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ------------------ */
+/* ---Responsive--- */
+@media (max-width: 600px) {
+    .reporting h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    /* --- Se despliega el menú lateral con las opciones del menú */
+    .nav-links {
+        position: absolute;
+        color: black;
+        background: white;
+        height: 115vh;
+        width: 200px;
+        top: 0px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    #start {
+        color: black;
+    }
+
+    #projects {
+        color: black;
+    }
+
+    #cv {
+        color: black;
+    }
+
+    #contact {
+        color: black;
+    }
+
+    /* Los iconos de menu y cerrar se muestran */
+    nav .fa {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    #bar {
+        color: white;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/*-----------------*/

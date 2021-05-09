@@ -3,28 +3,55 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- To ensure proper rendering and touch zooming in mobile phone-->
+    <!-- Para garantizar una representación adecuada y zoom táctil en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para emplear diferentes iconos -->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Para emplear diferentes estilos de fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
-    <link href="/Styles.css" rel="stylesheet">
-    <link href="/webIcon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="/style/projects/MyProjectsStyle.css" rel="stylesheet">
+    <link href="/images/webIcon.ico" rel="icon">
     <title>Hazt-Ver</title>
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
-            <h2>HAZT-VER</h2>
+<!-- Sección para la imagen la barra de navegación -->
+<section class="header">
+    <nav>
+        <a class> <img src="/images/webIcon.ico"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="#" class="ui-state-active">Sobre mí</a></li>
-                <li><a href="#">Mis proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/" id="start">Inicio</a></li>
+                <li><a href="/Projects" id="projects">Proyectos</a></li>
+                <li><a href="#" id="cv">Currículum</a></li>
+                <li><a href="/Contact" id="contact">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
+        <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+    </nav>
+</section>
+<!-- Sección para los diferentes proyectos -->
+<section class="projects">
+    <h1>Mis mejores proyectos</h1>
+    <div class="my-projects-row">
+        <div class="my-projects-col" id="first-project-image"></div>
+        <div class="my-projects-" id="first-project-description">
+            <h3>Chat y Hundir la flota</h3>
+            <p id="battleShip">Java - Programación multihilo</p>
+            <p>
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
     </div>
-</header>
+</section>
+<script src="/js/Script.js" charset="utf-8"></script>
 </body>
 </html>
