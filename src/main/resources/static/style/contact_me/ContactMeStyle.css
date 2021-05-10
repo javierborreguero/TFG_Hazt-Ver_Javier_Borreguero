@@ -16,6 +16,7 @@
     background-repeat: no-repeat;
     position: center;
 }
+
 .reporting {
     width: 90%;
     color: white;
@@ -96,8 +97,50 @@ nav .fa {
     margin: auto;
     padding: 80px 0;
 }
+
 .location iframe {
     width: 100%;
+}
+
+/* --- Enviar mensaje --- */
+.contact-me {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.btn-send-message {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Al pasar el ratón por encima, el botón se rellena de color*/
+.btn-send-message:hover {
+    border: 1px solid black;
+    background: darkgrey;
+    color: black;
+    transition: 1s;
 }
 /* ------------------ */
 /* ---Responsive--- */
