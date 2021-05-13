@@ -24,10 +24,10 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="/" id="start">Inicio</a></li>
-                <li><a href="/Projects" id="projects">Proyectos</a></li>
+                <li><a th:href="@{/}" id="start">Inicio</a></li>
+                <li><a th:href="@{/Projects}" id="projects">Proyectos</a></li>
                 <li><a href="#" id="cv">Currículum</a></li>
-                <li><a href="/Contact" id="contact">Contacto</a></li>
+                <li><a th:href="@{/Contact}" id="contact">Contacto</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
