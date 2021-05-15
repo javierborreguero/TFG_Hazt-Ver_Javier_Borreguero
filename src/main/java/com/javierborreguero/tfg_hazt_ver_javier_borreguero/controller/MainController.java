@@ -43,6 +43,11 @@ public class MainController {
         return "Contact_Me";
     }
 
+    @GetMapping("/Cv")
+    public String MyCurriculum() {
+        return "My_Curriculum";
+    }
+
     // Send email
     @PostMapping("/sendEmail")
     public String sendEmail(HttpServletRequest request) {
