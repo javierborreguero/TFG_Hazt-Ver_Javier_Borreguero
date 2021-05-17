@@ -37,6 +37,7 @@
     color: white;
 }
 
+/* Curriculum*/
 /* ----------------------------------- */
 /* Top nav bar y menú de opciones*/
 nav {
@@ -90,6 +91,90 @@ nav img {
 nav .fa {
     display: none;
 }
+
+/* Sección Sobre mí */
+.cv {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.cv h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.cv p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.cv-row {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.cv-col {
+    box-sizing: border-box;
+    float: left;
+    width: 500px;
+    padding: 10px;
+    height: 1000px;
+    margin-bottom: 10px;
+}
+
+
+#cv-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/curriculum.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 15px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#cv-image:hover {
+    opacity: 0.3;
+    cursor: pointer;
+
+}
+
+.cv-row:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+    padding: 12px 34px;
+    font-size: 15px;
+    border: 1px solid black;
+    background: darkgrey;
+    border-radius: 5px;
+    color: black;
+}
+
+.cv:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* ---Responsive--- */
 @media (max-width: 600px) {

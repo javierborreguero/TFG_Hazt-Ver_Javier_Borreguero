@@ -92,6 +92,7 @@ nav img {
     text-decoration: none;
     color: white;
     border: 1px solid white;
+    border-radius: 5px;
     padding: 12px 34px;
     font-size: 15px;
     background: transparent;
