@@ -124,7 +124,7 @@ nav .fa {
     box-sizing: border-box;
     float: left;
     width: 500px;
-    padding: 10px;
+    /*padding: 10px;*/
     height: 1000px;
     margin-bottom: 10px;
 }
@@ -135,7 +135,7 @@ nav .fa {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -175,6 +175,22 @@ nav .fa {
     clear: both;
 }
 
+/* --- Footer ---*/
+.footer{
+    padding-top: 950px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icons .fa{
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 10px 0px;
+}
 
 /* ---Responsive--- */
 @media (max-width: 600px) {

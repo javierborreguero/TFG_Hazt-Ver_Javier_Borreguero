@@ -72,6 +72,7 @@ nav .fa {
 }
 
 /* --------------- */
+
 /* --- Trayectoria --- */
 .projects {
     width: 80%;
@@ -93,7 +94,7 @@ nav .fa {
     padding: 10px;
 }
 
-.experience {
+.battleShip {
     position: absolute;
     left: 35%;
     width: max-content;
@@ -101,7 +102,7 @@ nav .fa {
     padding-top: 20px;
 }
 
-.work-experience {
+.battleShip-col {
     box-sizing: border-box;
     float: left;
     width: 200px;
@@ -111,7 +112,7 @@ nav .fa {
     border-radius: 10px;
 }
 
-#first-work-experience-description {
+#battleShip-description {
     width: 500px;
 }
 
@@ -120,18 +121,78 @@ nav .fa {
     display: inline-block;
 }
 
-#first-work-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/paradigma.jpg");
+#battleShip-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/hundirflota.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     margin-top: 15px;
 }
 
-.experience:after {
+.battleShip:after {
     content: "";
     display: table;
     clear: both;
+}
+
+/* --- Chat --- */
+.chat {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
+    padding-top: 300px;
+}
+
+.chat-col {
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#chat-description {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#contractChat {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#chat-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/chat.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 15px;
+}
+
+.chat:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Footer ---*/
+.footer{
+    padding-top: 600px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icons .fa{
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 10px 0px;
 }
 /* ------------------ */
 /* ---Responsive--- */
@@ -190,11 +251,28 @@ nav .fa {
     .nav-links ul {
         padding: 30px;
     }
+
     .projects {
         padding-top: 300px;
     }
-    .work-experience {
+
+    .battleShip-description {
         width: 100%;
+    }
+
+    .battleShip-image {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .chat-image {
+        width: 100%;
+        padding-top: 300px;
+    }
+
+    .chat-description {
+        width: 100%;
+        padding-top: 20px;
     }
 }
 

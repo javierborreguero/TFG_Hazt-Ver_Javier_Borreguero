@@ -277,6 +277,22 @@ nav .fa {
     display: none;
 }
 
+/* --- Footer ---*/
+.footer{
+    padding-top: 600px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icons .fa{
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 10px 0px;
+}
 /* ------------------ */
 /* ---Responsive--- */
 @media (max-width: 600px) {
