@@ -3,28 +3,69 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- To ensure proper rendering and touch zooming in mobile phone-->
+    <!-- Para garantizar una representación adecuada y zoom táctil en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para emplear diferentes iconos -->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Para emplear diferentes estilos de fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
-    <link href="/Styles.css" rel="stylesheet">
-    <link href="/webIcon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="/style/contact_me/ContactMeStyle.css" rel="stylesheet">
+    <link href="/images/webIcon.ico" rel="icon">
     <title>Hazt-Ver</title>
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
-            <h2>HAZT-VER</h2>
+<!-- Sección para la imagen, la barra de navegación y la presentación -->
+<section class="header">
+    <nav>
+        <a class> <img src="/images/webIcon.ico"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="#" class="ui-state-active">Sobre mí</a></li>
-                <li><a href="#">Mis proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a th:href="@{/}" id="start">Inicio</a></li>
+                <li><a th:href="@{/Projects}" id="projects">Proyectos</a></li>
+                <li><a th:href="@{/Cv}" id="cv">Currículum</a></li>
+                <li><a th:href="@{/Contact}" id="contact">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
+        <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+    </nav>
+    <!-- Introducción -->
+    <div class="reporting">
+        <h1>Contacta conmigo</h1>
     </div>
-</header>
+</section>
+<!-- Sección contacta conmigo -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12135.538174685247!2d-3.717951763868716!3d40.49993606968672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422a2eb88824eb%3A0x367b792c5fb758ee!2sMirasierra-Paco%20De%20Lucia!5e0!3m2!1ses!2ses!4v1620559661772!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section class="contact-me">
+    <div class="row">
+        <div class="contact-col">
+            <form th:action="@{/sendEmail}" method="post">
+                <input name="name" type="text" placeholder="Introduzca su nombre: " required>
+                <input name="email" type="email" placeholder="Introduzca su dirección de correo: " required>
+                <input name="subject" type="text" placeholder="Introduzca el asunto del correo: " required>
+                <textarea name="message" rows="8" placeholder="Mensaje: " required></textarea>
+                <button href="/Contact" type="submit" class="btn-send-message">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <h4>Javier Borreguero</h4>
+    <p>Desarrollador software</p>
+    <div class="icons">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+</section>
+<script src="/js/Script.js" charset="utf-8"></script>
 </body>
 </html>

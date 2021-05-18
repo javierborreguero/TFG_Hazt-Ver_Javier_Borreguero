@@ -10,7 +10,7 @@
 .header {
     min-height: 115vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/portada.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/primeraportadaproyecto.jpg");
     background-position: initial;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,62 +66,27 @@ nav img {
 }
 
 /* ----------------------------------- */
-/* Presentación */
-.reporting {
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+/* --- Meú lateral --- */
+nav .fa {
+    display: none;
 }
 
-.reporting h1 {
-    font-size: 62px;
-}
+/* --------------- */
 
-.reporting p {
-    margin: 10px 0px 40px;
-    font-size: 16px;
-    color: white;
-}
-
-.learn-more {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 12px 34px;
-    font-size: 15px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-/* Al pasar el ratón por encima, el botón se rellena de color*/
-.learn-more:hover {
-    border: 1px solid white;
-    background: darkgrey;
-    color: black;
-    transition: 1s;
-}
-
-/* ----------------------------------- */
-/* Sección Sobre mí */
-.about-me {
+/* --- Trayectoria --- */
+.projects {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.about-me h1 {
+.projects h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.about-me p {
+.projects p {
     color: #777;
     font-size: 14px;
     font-weight: 300;
@@ -129,64 +94,7 @@ nav img {
     padding: 10px;
 }
 
-.about-me-row {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-}
-
-.about-me-col {
-    box-sizing: border-box;
-    float: left;
-    width: 200px;
-    padding: 10px;
-    height: 200px;
-    margin-bottom: 10px;
-}
-
-#about-me-image-description {
-    width: 500px;
-}
-
-#about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/imagenJavier.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 15px;
-}
-
-.about-me-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --------------- */
-/* --- Trayectoria --- */
-.trajectory {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 300px;
-}
-
-.trajectory h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.trajectory p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-/* --- Experiencia laboral*/
-.experience {
+.battleShip {
     position: absolute;
     left: 35%;
     width: max-content;
@@ -194,7 +102,7 @@ nav img {
     padding-top: 20px;
 }
 
-.work-experience {
+.battleShip-col {
     box-sizing: border-box;
     float: left;
     width: 200px;
@@ -204,7 +112,7 @@ nav img {
     border-radius: 10px;
 }
 
-#first-work-experience-description {
+#battleShip-description {
     width: 500px;
 }
 
@@ -213,22 +121,22 @@ nav img {
     display: inline-block;
 }
 
-#first-work-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/paradigma.jpg");
+#battleShip-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/hundirflota.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     margin-top: 15px;
 }
 
-.experience:after {
+.battleShip:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* --- Estudios --- */
-.studies {
+/* --- Chat --- */
+.chat {
     position: absolute;
     left: 35%;
     width: max-content;
@@ -236,7 +144,7 @@ nav img {
     padding-top: 300px;
 }
 
-.studies-experience {
+.chat-col {
     box-sizing: border-box;
     float: left;
     width: 200px;
@@ -246,36 +154,46 @@ nav img {
     border-radius: 10px;
 }
 
-#my-studies-experience-description {
+#chat-description {
     width: 500px;
     margin-bottom: 10px;
 }
 
-#u-tad-full-name {
+#contractChat {
     font-weight: bold;
     display: inline-block;
 }
 
-#my-studies-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/aaaa.png");
+#chat-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/chat.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
     margin-top: 15px;
 }
 
-.studies:after {
+.chat:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* ------------------- */
-/* --- Meú lateral --- */
-nav .fa {
-    display: none;
+/* --- Footer ---*/
+.footer{
+    padding-top: 600px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
-
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icons .fa{
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 10px 0px;
+}
 /* ------------------ */
 /* ---Responsive--- */
 @media (max-width: 600px) {
@@ -301,6 +219,22 @@ nav .fa {
         transition: 1s;
     }
 
+    #start {
+        color: black;
+    }
+
+    #projects {
+        color: black;
+    }
+
+    #cv {
+        color: black;
+    }
+
+    #contact {
+        color: black;
+    }
+
     /* Los iconos de menu y cerrar se muestran */
     nav .fa {
         display: block;
@@ -318,27 +252,28 @@ nav .fa {
         padding: 30px;
     }
 
-    .about-me-col {
-        width: 100%;
-
-    }
-
-    .trajectory {
+    .projects {
         padding-top: 300px;
     }
 
-    .work-experience {
+    .battleShip-description {
         width: 100%;
     }
 
-    .studies-experience {
+    .battleShip-image {
         width: 100%;
+        padding-top: 20px;
     }
 
-    .studies {
+    .chat-image {
+        width: 100%;
         padding-top: 300px;
     }
 
+    .chat-description {
+        width: 100%;
+        padding-top: 20px;
+    }
 }
 
 /*-----------------*/

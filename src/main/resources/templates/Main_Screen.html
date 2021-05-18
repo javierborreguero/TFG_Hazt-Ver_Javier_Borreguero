@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
           rel="stylesheet">
-    <link href="/style/Styles.css" rel="stylesheet">
+    <link href="/style/main_screen/MainScreenStyle.css" rel="stylesheet">
     <link href="/images/webIcon.ico" rel="icon">
     <title>Hazt-Ver</title>
 </head>
@@ -24,10 +24,10 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li href="#">Inicio</li>
-                <li href="#">Proyectos</li>
-                <li href="#">Currículum</li>
-                <li href="#">Contacto</li>
+                <li><a th:href="@{/}" id="start">Inicio</a></li>
+                <li><a th:href="@{/Projects}" id="projects">Proyectos</a></li>
+                <li><a th:href="@{/Cv}" id="cv">Currículum</a></li>
+                <li><a th:href="@{/Contact}" id="contact">Contacto</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
@@ -80,6 +80,17 @@
                 oportunidad de impartir una enseñanza adaptada a la constante evolución de la tecnología. En U-tad, se
                 imparte un enseñanza de calidad en la que priman valores como la constancia y el trabajo en equipo. </p>
         </div>
+    </div>
+</section>
+<section class="footer">
+    <h4>Javier Borreguero</h4>
+    <p>Desarrollador software</p>
+    <div class="icons">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
     </div>
 </section>
 <script src="/js/Script.js" charset="utf-8"></script>

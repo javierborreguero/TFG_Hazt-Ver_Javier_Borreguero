@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
           rel="stylesheet">
-    <link href="/style/projects/MyProjectsStyle.css" rel="stylesheet">
+    <link href="/style/my_curriculum/MiCirruculumStyle.css" rel="stylesheet">
     <link href="/images/webIcon.ico" rel="icon">
     <title>Hazt-Ver</title>
 </head>
 <body>
-<!-- Sección para la imagen la barra de navegación -->
+<!-- Sección para la imagen, la barra de navegación y la presentación -->
 <section class="header">
     <nav>
         <a class> <img src="/images/webIcon.ico"></a>
@@ -32,33 +32,22 @@
         </div>
         <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
     </nav>
+    <!-- Introducción -->
+    <div class="reporting">
+        <h1>Mi Curriculum</h1>
+    </div>
 </section>
-<section class="projects">
-    <h1>Mi trayectoria</h1>
-    <div class="battleShip">
-        <div class="battleShip-col" id="battleShip-image">
-        </div>
-        <div class="battleShip-col" id="battleShip-description">
-            <h3>Hundir la flota</h3>
-            <p id="contract">Java - Sockets</p>
-            <p>El clásico juego de la batalla naval. Al comenzar cada juagador distrbibuye sus barcos a lo largo de su
-                tablero. Con todos los barcos bien colocados, comienza una serie de rondas en las que cada jugador debe
-                derribar todos los barcos de su contrincante. Gana el primer en destruir toda la flota rival.
-                Este proyecto está desarrollado con socket stream (TCP), que es un protocolo orientado a conexión, que
-                permite la comunicación entre los distintos jugadores de manera continua.</p>
-        </div>
+<section class="cv">
+    <div class="cv-row">
+        <h1>Ver y descargar mi Currículum</h1>
+        <a th:href="@{/pdf/curriculum.pdf}" download="CV_Javier_Borreguero.pdf">
+            <div class="cv-col" id="cv-image">
+            </div>
+            <div class="middle">
+                <div class="text">Descargar</div>
+            </div>
+        </a>
     </div>
-    <div class="chat">
-        <div class="chat-col" id="chat-image">
-        </div>
-        <div class="chat-col" id="chat-description">
-            <h3>Chat</h3>
-            <p id="contractChat">Java - Sockets</p>
-            <p>En esta ocasión traigo un chat. En el que dos jugadores intercambian diferentes mensajes.
-                Desarrollado con socket datagram (UDP), sevicios de transporte de información sin conexión.</p>
-        </div>
-    </div>
-    <div class="aux"></div>
 </section>
 <section class="footer">
     <h4>Javier Borreguero</h4>
