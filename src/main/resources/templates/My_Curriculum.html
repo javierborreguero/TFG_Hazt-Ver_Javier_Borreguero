@@ -39,11 +39,13 @@
 </section>
 <section class="cv">
     <div class="cv-row">
-        <div class="cv-col" id="cv-image">
-        </div>
-        <div class="middle">
-            <div class="text">Descargar</div>
-        </div>
+        <a th:href="@{/pdf/curriculum.pdf}" download="CV_Javier_Borreguero.pdf">
+            <div class="cv-col" id="cv-image">
+            </div>
+            <div class="middle">
+                <div class="text">Descargar</div>
+            </div>
+        </a>
     </div>
 </section>
 <script src="/js/Script.js" charset="utf-8"></script>
