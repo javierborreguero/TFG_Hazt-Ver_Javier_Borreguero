@@ -74,26 +74,44 @@ nav .fa {
 /* --------------- */
 
 /* --- Trayectoria --- */
-.projects {
+.battleShipProject {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.projects h1 {
+.battleShipProject h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.projects p {
+.battleShipProject p {
     color: #777;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
+.chatProject {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
 
+.chatProject h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.chatProject p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
 .battleShip {
     position: absolute;
     left: 35%;
@@ -252,7 +270,7 @@ nav .fa {
         padding: 30px;
     }
 
-    .projects {
+    .battleShipProject {
         padding-top: 300px;
     }
 

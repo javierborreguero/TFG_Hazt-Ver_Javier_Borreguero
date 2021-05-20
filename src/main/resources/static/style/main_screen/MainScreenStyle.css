@@ -166,19 +166,39 @@ nav img {
 
 /* --------------- */
 /* --- Trayectoria --- */
-.trajectory {
+.experienceTrajectory {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 300px;
 }
 
-.trajectory h1 {
+.experienceTrajectory h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.trajectory p {
+.experienceTrajectory p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.studiesTrajectory {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.studiesTrajectory h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.studiesTrajectory p {
     color: #777;
     font-size: 14px;
     font-weight: 300;
@@ -278,21 +298,24 @@ nav .fa {
 }
 
 /* --- Footer ---*/
-.footer{
+.footer {
     padding-top: 600px;
     padding-bottom: 20px;
     width: 100%;
     text-align: center;
 }
-.footer h4{
+
+.footer h4 {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.icons .fa{
+
+.icons .fa {
     margin: 0px 13px;
     cursor: pointer;
     padding: 10px 0px;
 }
+
 /* ------------------ */
 /* ---Responsive--- */
 @media (max-width: 600px) {
