@@ -65,6 +65,47 @@ nav img {
     width: 100%;
 }
 
+.reporting {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.reporting h1 {
+    font-size: 62px;
+}
+
+.reporting p {
+    margin: 10px 0px 40px;
+    font-size: 16px;
+    color: white;
+}
+
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Al pasar el ratón por encima, el botón se rellena de color*/
+.learn-more:hover {
+    border: 1px solid white;
+    background: darkgrey;
+    color: black;
+    transition: 1s;
+}
+
 /* ----------------------------------- */
 /* --- Meú lateral --- */
 nav .fa {
@@ -74,19 +115,19 @@ nav .fa {
 /* --------------- */
 
 /* --- Trayectoria --- */
-.projects {
+.battleShipProject {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.projects h1 {
+.battleShipProject h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.projects p {
+.battleShipProject p {
     color: #777;
     font-size: 14px;
     font-weight: 300;
@@ -136,6 +177,26 @@ nav .fa {
 }
 
 /* --- Chat --- */
+.chatProject {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.chatProject h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.chatProject p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
 .chat {
     position: absolute;
     left: 35%;
@@ -178,22 +239,152 @@ nav .fa {
     clear: both;
 }
 
-/* --- Footer ---*/
-.footer{
+/* --- Vuelos --- */
+.flightProject {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.flightProject h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.flightProject p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.flightController {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
     padding-top: 600px;
+}
+
+.flightController-col {
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#flightController-description {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#flightContract {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#flightController-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/plain.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 15px;
+}
+
+.flightController:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Clima --- */
+.weatherProject {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.weatherProject h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.weatherProject p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.weather {
+    position: absolute;
+    left: 35%;
+    width: max-content;
+    margin-bottom: 10px;
+    padding-top: 900px;
+}
+
+.weather-col {
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#weather-description {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#weatherContract {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#weather-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/aaa.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 15px;
+}
+
+.weather-col:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ------------ */
+/* --- Footer ---*/
+.footer {
+    padding-top: 1200px;
     padding-bottom: 20px;
     width: 100%;
     text-align: center;
 }
-.footer h4{
+
+.footer h4 {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.icons .fa{
+
+.icons .fa {
     margin: 0px 13px;
     cursor: pointer;
     padding: 10px 0px;
 }
+
 /* ------------------ */
 /* ---Responsive--- */
 @media (max-width: 600px) {
@@ -252,7 +443,7 @@ nav .fa {
         padding: 30px;
     }
 
-    .projects {
+    .battleShipProject {
         padding-top: 300px;
     }
 

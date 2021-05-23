@@ -35,6 +35,8 @@
     <!-- Introducción -->
     <div class="reporting">
         <h1>Mi Curriculum</h1>
+        <p>Podrás ver y descargar mi curriculum</p>
+        <a th:href="@{#cv-image}" class="learn-more">Ver currículum</a>
     </div>
 </section>
 <section class="cv">
@@ -53,11 +55,21 @@
     <h4>Javier Borreguero</h4>
     <p>Desarrollador software</p>
     <div class="icons">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <a style="color: black" th:href="@{https://www.linkedin.com/in/javier-borreguero/}">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://github.com/javierborreguero}">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://www.facebook.com/javier.borreguero.792/}">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://twitter.com/Javier_BdelPozo}">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://www.instagram.com/javiborreguero96/}">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
     </div>
 </section>
 <script src="/js/Script.js" charset="utf-8"></script>
