@@ -1,16 +1,12 @@
 package com.javierborreguero.tfg_hazt_ver_javier_borreguero.controller;
 
-import com.javierborreguero.tfg_hazt_ver_javier_borreguero.entity.Personal;
 import com.javierborreguero.tfg_hazt_ver_javier_borreguero.service.EmailService;
-import com.javierborreguero.tfg_hazt_ver_javier_borreguero.service.PersonalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 /**
  * Clase que se encarga de atender peticiones y derivarnos a la vista correspondiente
@@ -18,18 +14,14 @@ import java.util.List;
 @Controller
 public class MainController {
     @Autowired
-    private PersonalService personalService;
     private EmailService emailService;
 
-    public MainController(PersonalService personalService, EmailService emailService) {
-        this.personalService = personalService;
+    public MainController(EmailService emailService) {
         this.emailService = emailService;
     }
 
     @GetMapping("/")
-    public String aboutMe(Model model) {
-        List<Personal> personalInfo = personalService.listAll();
-        model.addAttribute("personalInfo", personalInfo);
+    public String aboutMe() {
         return "Main_Screen";
     }
 

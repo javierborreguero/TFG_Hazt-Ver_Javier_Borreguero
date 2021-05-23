@@ -35,6 +35,8 @@
     <!-- Introducción -->
     <div class="reporting">
         <h1>Contacta conmigo</h1>
+        <p>¿Tienes alguna sugerencia?</p>
+        <a th:href="@{#contact-me   }" class="learn-more">Contacta conmigo</a>
     </div>
 </section>
 <!-- Sección contacta conmigo -->
@@ -44,7 +46,7 @@
 </section>
 <section class="contact-me">
     <div class="row">
-        <div class="contact-col">
+        <div class="contact-col" id="contact-me">
             <form th:action="@{/sendEmail}" method="post">
                 <input name="name" type="text" placeholder="Introduzca su nombre: " required>
                 <input name="email" type="email" placeholder="Introduzca su dirección de correo: " required>

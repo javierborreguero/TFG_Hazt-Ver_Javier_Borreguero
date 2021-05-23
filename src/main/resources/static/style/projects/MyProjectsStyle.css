@@ -65,6 +65,47 @@ nav img {
     width: 100%;
 }
 
+.reporting {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.reporting h1 {
+    font-size: 62px;
+}
+
+.reporting p {
+    margin: 10px 0px 40px;
+    font-size: 16px;
+    color: white;
+}
+
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Al pasar el ratón por encima, el botón se rellena de color*/
+.learn-more:hover {
+    border: 1px solid white;
+    background: darkgrey;
+    color: black;
+    transition: 1s;
+}
+
 /* ----------------------------------- */
 /* --- Meú lateral --- */
 nav .fa {

@@ -36,7 +36,7 @@
     <div class="reporting">
         <h1>Javier Borreguero</h1>
         <p>Desarrollador de software y amante de las nuevas tecnologías</p>
-        <a href="#" class="learn-more">Saber más</a>
+        <a th:href="@{#about-me-image-description}" class="learn-more">Saber más</a>
     </div>
 </section>
 <!--Sección sobre mí-->
@@ -45,9 +45,10 @@
     <div class="about-me-row">
         <div class="about-me-col" id="about-me-image">
         </div>
-        <div class="about-me-col" th:each="personal : ${personalInfo}" id="about-me-image-description">
-            <h3 th:text="${personal.name}">Column 1</h3>
-            <p th:text="${personal.description}">Some text..</p>
+        <div class="about-me-col" id="about-me-image-description">
+            <h3>Desarrollador de software</h3>
+            <p>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, capacitado para trabajar en entornos
+                back-end y front-end.</p>
         </div>
     </div>
 </section>
