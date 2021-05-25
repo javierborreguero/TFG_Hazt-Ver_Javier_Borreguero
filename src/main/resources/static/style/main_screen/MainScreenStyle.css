@@ -114,12 +114,14 @@ nav img {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10%;
+    padding-bottom: 20%;
 }
 
 .about-me h1 {
     font-size: 36px;
     font-weight: 600;
+    width: 80%;
 }
 
 .about-me p {
@@ -127,26 +129,28 @@ nav img {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding-top: 10px;
+    width: 70%;
 }
 
 .about-me-row {
     position: absolute;
     left: 35%;
-    width: max-content;
+    width: 80%;
     margin-bottom: 10px;
 }
 
 .about-me-col {
     box-sizing: border-box;
     float: left;
-    width: 200px;
+    width: 80%;
     padding: 10px;
-    height: 200px;
+    height: auto;
     margin-bottom: 10px;
 }
 
 #about-me-image-description {
+    text-align: left;
     width: 500px;
 }
 
@@ -154,8 +158,10 @@ nav img {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/imagenJavier.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
     margin-top: 15px;
+    width: 200px;
+    height: 200px;
 }
 
 .about-me-row:after {
@@ -165,17 +171,20 @@ nav img {
 }
 
 /* --------------- */
-/* --- Trayectoria --- */
+
+/* --- Experiencia laboral*/
 .experienceTrajectory {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 10%;
+    padding-bottom: 20%;
 }
 
 .experienceTrajectory h1 {
     font-size: 36px;
     font-weight: 600;
+    width: 80%;
 }
 
 .experienceTrajectory p {
@@ -183,49 +192,30 @@ nav img {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 70%;
 }
 
-.studiesTrajectory {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.studiesTrajectory h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.studiesTrajectory p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-/* --- Experiencia laboral*/
 .experience {
     position: absolute;
     left: 35%;
-    width: max-content;
+    width: 80%;
     margin-bottom: 10px;
-    padding-top: 20px;
 }
 
 .work-experience {
     box-sizing: border-box;
     float: left;
-    width: 200px;
+    width: 80%;
     padding: 10px;
-    height: 200px;
+    height: auto;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
 #first-work-experience-description {
+    text-align: left;
     width: 500px;
 }
 
@@ -237,9 +227,11 @@ nav img {
 #first-work-experience {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/paradigma.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+    background-size: contain;
+    background-position: center;
     margin-top: 15px;
+    width: 200px;
+    height: 200px;
 }
 
 .experience:after {
@@ -249,27 +241,50 @@ nav img {
 }
 
 /* --- Estudios --- */
+.studiesTrajectory {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.studiesTrajectory h1 {
+    font-size: 36px;
+    font-weight: 600;
+    width: 80%;
+}
+
+.studiesTrajectory p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 70%;
+}
+
 .studies {
     position: absolute;
     left: 35%;
-    width: max-content;
+    width: 80%;
     margin-bottom: 10px;
-    padding-top: 300px;
 }
 
 .studies-experience {
     box-sizing: border-box;
     float: left;
-    width: 200px;
+    width: 80%;
     padding: 10px;
-    height: 200px;
+    height: auto;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
 #my-studies-experience-description {
+    text-align: left;
     width: 500px;
-    margin-bottom: 10px;
 }
 
 #u-tad-full-name {
@@ -281,8 +296,10 @@ nav img {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/utad.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
     margin-top: 15px;
+    width: 200px;
+    height: 200px;
 }
 
 .studies:after {
@@ -299,7 +316,7 @@ nav .fa {
 
 /* --- Footer ---*/
 .footer {
-    padding-top: 600px;
+    padding-top: 10%;
     padding-bottom: 20px;
     width: 100%;
     text-align: center;
@@ -374,25 +391,112 @@ nav .fa {
         padding: 30px;
     }
 
-    .about-me-col {
-        width: 100%;
-
+    .about-me {
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+        padding-bottom: 100%;
     }
 
-    .trajectory {
-        padding-top: 300px;
+    .about-me-row {
+        width: 50%;
+        height: 50%;
+    }
+
+    .about-me-col {
+        width: 50%;
+        height: 50%;
+    }
+
+    #about-me-image-description {
+        width: 50%;
+        height: 50%;
+    }
+
+    #about-me-image {
+        width: 50%;
+        height: 50%;
+    }
+
+    .experienceTrajectory {
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+        padding-bottom: 100%;
+    }
+
+    .experienceTrajectory h1 {
+        width: 50%;
+        height: 50%;
+    }
+
+    .experienceTrajectory p {
+        width: 50%;
+        height: 50%;
+    }
+
+    .experience {
+        width: 50%;
+        height: 50%;
     }
 
     .work-experience {
-        width: 100%;
+        width: 50%;
+        height: 50%;
     }
 
-    .studies-experience {
-        width: 100%;
+    #first-work-experience-description {
+        width: 50%;
+        height: 50%;
+    }
+
+    /*#contract {*/
+    /*}*/
+    #first-work-experience {
+        width: 50%;
+        height: 50%;
+    }
+    .studiesTrajectory {
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+        padding-bottom: 100%;
+    }
+
+    .studiesTrajectory h1 {
+        width: 50%;
+        height: 50%;
+    }
+
+    .studiesTrajectory p {
+        width: 50%;
+        height: 50%;
     }
 
     .studies {
-        padding-top: 300px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .studies-experience {
+        width: 50%;
+        height: 50%;
+    }
+
+    #my-studies-experience-description {
+        width: 50%;
+        height: 50%;
+    }
+
+    /*#u-tad-full-name {*/
+    /*    font-weight: bold;*/
+    /*    display: inline-block;*/
+    /*}*/
+
+    #my-studies-experience {
+        width: 50%;
+        height: 50%;
+
     }
 
 }
