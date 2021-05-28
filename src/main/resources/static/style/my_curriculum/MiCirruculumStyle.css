@@ -8,7 +8,7 @@
 /* ----------------------------------- */
 /* ---Configuración de la imagen--- */
 .header {
-    min-height: 115vh;
+    height: 1000px;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/portada.jpg");
     background-position: initial;
@@ -124,6 +124,7 @@ nav .fa {
 .cv h1 {
     font-size: 36px;
     font-weight: 600;
+    width: 80%;
 }
 
 .cv p {
@@ -132,11 +133,13 @@ nav .fa {
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+    width: 70%;
 }
 
 .cv-row {
     position: absolute;
-    left: 35%;
+    left: 30%;
+    width: 80%;
     width: max-content;
     margin-bottom: 10px;
 }
@@ -144,9 +147,9 @@ nav .fa {
 .cv-col {
     box-sizing: border-box;
     float: left;
-    width: 500px;
-    /*padding: 10px;*/
-    height: 1000px;
+    width: 80%;
+    padding: 10px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -156,10 +159,11 @@ nav .fa {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    /*margin-top: 15px;*/
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
+    width: 700px;
+    height: 1200px;
 }
 
 .middle {
@@ -198,15 +202,19 @@ nav .fa {
 
 /* --- Footer ---*/
 .footer {
-    padding-top: 950px;
-    padding-bottom: 20px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 80%;
+    padding-bottom: 10px;
 }
 
 .footer h4 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
 }
 
 .icons .fa {
@@ -216,7 +224,56 @@ nav .fa {
 }
 
 /* ---Responsive--- */
-@media (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 875px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 647px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 541px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 502px) {
     .reporting h1 {
         font-size: 20px;
     }
@@ -272,3 +329,76 @@ nav .fa {
         padding: 30px;
     }
 }
+@media screen and (max-width: 461px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 435px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 412px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+
+    }
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 405px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 373px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 281px) {
+    .cv {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 300%;
+        padding-bottom: 10px;
+    }
+
+}
+/*-----------------*/

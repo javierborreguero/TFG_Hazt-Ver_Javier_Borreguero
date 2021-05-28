@@ -8,7 +8,7 @@
 /* ----------------------------------- */
 /* ---Configuración de la imagen--- */
 .header {
-    min-height: 115vh;
+    height: 1000px;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/portada.jpg");
     background-position: initial;
@@ -152,6 +152,7 @@ nav img {
 #about-me-image-description {
     text-align: left;
     width: 500px;
+    display: inline-block;
 }
 
 #about-me-image {
@@ -524,6 +525,29 @@ nav .fa {
     }
 
 }
+@media screen and (max-width: 412px) {
+    .about-me {
+        padding-top: 10%;
+        padding-bottom: 20%;
+
+    }
+
+    .experienceTrajectory {
+        padding-top: 60%;
+        padding-bottom: 20%;
+    }
+
+    .studiesTrajectory {
+        padding-top: 110%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 110%;
+        padding-bottom: 10px;
+    }
+
+}
 @media screen and (max-width: 405px) {
     .about-me {
         padding-top: 10%;
@@ -555,6 +579,29 @@ nav .fa {
     .experienceTrajectory {
         padding-top: 80%;
         padding-bottom: 20%;
+    }
+
+    .studiesTrajectory {
+        padding-top: 130%;
+        padding-bottom: 20%;
+    }
+
+    .footer {
+        padding-top: 130%;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 281px) {
+    .about-me {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .experienceTrajectory {
+        padding-top: 100%;
+        padding-bottom: 20%;
+
     }
 
     .studiesTrajectory {
