@@ -36,29 +36,31 @@
     <div class="reporting">
         <h1>Javier Borreguero</h1>
         <p>Desarrollador de software y amante de las nuevas tecnologías</p>
-        <a th:href="@{#section-about-me}" class="learn-more">Saber más</a>
+        <a th:href="@{#about-me-section}" class="learn-more">Saber más</a>
     </div>
 </section>
 <!--Sección sobre mí-->
-<section class="about-me" id="section-about-me">
+<section class="about-me-section" id="about-me-section">
     <h1>Sobre mí</h1>
     <div class="about-me-row">
-        <div class="about-me-col" id="about-me-image">
+        <div class="about-me-col">
+            <img src="/images/imagenJavier.jpg">
         </div>
-        <div class="about-me-col" id="about-me-image-description">
+        <div class="about-me-col">
             <h3>Desarrollador de software</h3>
             <p>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, capacitado para trabajar en entornos
                 back-end y front-end.</p>
         </div>
     </div>
 </section>
-<section class="experienceTrajectory">
+<!-- Primera experiencia laboral -->
+<section class="first-trajectory-experience-section">
     <h1>Mi trayectoria</h1>
-    <!-- Experiencia laboral -->
-    <div class="experience">
-        <div class="work-experience" id="first-work-experience">
+    <div class="first-trajectory-experience-row">
+        <div class="first-trajectory-experience-column">
+            <img src="/images/paradigma.jpg">
         </div>
-        <div class="work-experience" id="first-work-experience-description">
+        <div class="first-trajectory-experience-column">
             <a style="color: black" th:href="@{https://www.paradigmadigital.com/}">
                 <h3>Paradigma Digital</h3>
             </a>
@@ -71,13 +73,13 @@
         </div>
     </div>
 </section>
-<!-- Sección mi trayectoria-->
-<section class="studiesTrajectory">
-    <!-- Educación -->
-    <div class="studies">
-        <div class="studies-experience" id="my-studies-experience">
+<!-- Formación -->
+<section class="education-trajectory-section">
+    <div class="education-trajectory-row">
+        <div class="education-trajectory-column">
+            <img src="/images/utad.png">
         </div>
-        <div class="studies-experience" id="my-studies-experience-description">
+        <div class="education-trajectory-column">
             <a style="color: black" th:href="@{https://u-tad.com}">
                 <h3>U-tad</h3>
             </a>
@@ -89,6 +91,7 @@
         </div>
     </div>
 </section>
+<!-- Footer -->
 <section class="footer">
     <h4>Javier Borreguero</h4>
     <p>Desarrollador software</p>

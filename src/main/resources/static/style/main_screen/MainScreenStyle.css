@@ -6,7 +6,7 @@
 }
 
 /* ----------------------------------- */
-/* ---Configuración de la imagen--- */
+/* --- Header --- */
 .header {
     height: 1000px;
     width: 100%;
@@ -108,213 +108,118 @@ nav img {
     transition: 1s;
 }
 
-/* ----------------------------------- */
-/* Sección Sobre mí */
-.about-me {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 20%;
-}
-
-.about-me h1 {
-    font-size: 36px;
-    font-weight: 600;
-    width: 80%;
-}
-
-.about-me p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding-top: 10px;
-    width: 70%;
-}
-
-.about-me-row {
-    position: absolute;
-    left: 35%;
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-.about-me-col {
-    box-sizing: border-box;
-    float: left;
-    width: 80%;
-    padding: 10px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-#about-me-image-description {
-    text-align: left;
-    width: 500px;
-    display: inline-block;
-}
-
-#about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/imagenJavier.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: 15px;
-    width: 200px;
-    height: 200px;
-}
-
-.about-me-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --------------- */
-
-/* --- Experiencia laboral*/
-.experienceTrajectory {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 20%;
-}
-
-.experienceTrajectory h1 {
-    font-size: 36px;
-    font-weight: 600;
-    width: 80%;
-}
-
-.experienceTrajectory p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding-left: 10px;
-    padding-top: 10px;
-    width: 70%;
-}
-
-.experience {
-    position: absolute;
-    left: 35%;
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-.work-experience {
-    box-sizing: border-box;
-    float: left;
-    width: 80%;
-    padding: 10px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-#first-work-experience-description {
-    text-align: left;
-    width: 500px;
-}
-
-#contract {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#first-work-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/paradigma.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: 15px;
-    width: 200px;
-    height: 200px;
-}
-
-.experience:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --- Estudios --- */
-.studiesTrajectory {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 20%;
-}
-
-.studiesTrajectory h1 {
-    font-size: 36px;
-    font-weight: 600;
-    width: 80%;
-}
-
-.studiesTrajectory p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding-left: 10px;
-    padding-top: 10px;
-    width: 80%;
-}
-
-.studies {
-    position: absolute;
-    left: 35%;
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-.studies-experience {
-    box-sizing: border-box;
-    float: left;
-    width: 80%;
-    padding: 10px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-#my-studies-experience-description {
-    text-align: left;
-    width: 500px;
-}
-
-#u-tad-full-name {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#my-studies-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/utad.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: 15px;
-    width: 200px;
-    height: 200px;
-}
-
-.studies:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* ------------------- */
 /* --- Meú lateral --- */
 nav .fa {
     display: none;
 }
 
+/* ----------------------------------- */
+/* --- About-me ---*/
+.about-me-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.about-me-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-me-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.about-me-col img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ----------------------------------- */
+/* --- Primera expiencia laboral --- */
+.first-trajectory-experience-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.first-trajectory-experience-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.first-trajectory-experience-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.first-trajectory-experience-column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ----------------------------------- */
+/* --- Formación --- */
+.education-trajectory-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.education-trajectory-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.education-trajectory-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.education-trajectory-column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ----------------------------------- */
 /* --- Footer ---*/
 .footer {
     width: 80%;
@@ -337,95 +242,7 @@ nav .fa {
 
 /* ------------------ */
 /* ---Responsive--- */
-@media screen and (max-width: 1000px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 20%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 875px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 30%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 50%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 50%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 647px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 40%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 70%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 70%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 541px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 50%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 90%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 90%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 502px) {
+@media screen and (max-width: 700px) {
     .reporting h1 {
         font-size: 20px;
     }
@@ -480,139 +297,18 @@ nav .fa {
     .nav-links ul {
         padding: 30px;
     }
+
+    .about-me-row {
+        flex-direction: column;
+    }
+
+    .first-trajectory-experience-row {
+        flex-direction: column;
+    }
+
+    .education-trajectory-row {
+        flex-direction: column;
+    }
 }
-@media screen and (max-width: 461px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
 
-    .experienceTrajectory {
-        padding-top: 60%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 100%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 100%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 435px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 60%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 110%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 110%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 412px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-
-    }
-
-    .experienceTrajectory {
-        padding-top: 60%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 110%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 110%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 405px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 70%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 120%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 120%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 373px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 80%;
-        padding-bottom: 20%;
-    }
-
-    .studiesTrajectory {
-        padding-top: 130%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 130%;
-        padding-bottom: 10px;
-    }
-
-}
-@media screen and (max-width: 281px) {
-    .about-me {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .experienceTrajectory {
-        padding-top: 100%;
-        padding-bottom: 20%;
-
-    }
-
-    .studiesTrajectory {
-        padding-top: 130%;
-        padding-bottom: 20%;
-    }
-
-    .footer {
-        padding-top: 130%;
-        padding-bottom: 10px;
-    }
-
-}
 /*-----------------*/
