@@ -36,19 +36,24 @@
     <div class="reporting">
         <h1>Mi Curriculum</h1>
         <p>Podrás ver y descargar mi curriculum</p>
-        <a th:href="@{#cv-image}" class="learn-more">Ver currículum</a>
+        <a th:href="@{#cv-section}" class="learn-more">Ver currículum</a>
     </div>
 </section>
-<section class="cv">
+<section class="cv-section" id="cv-section">
+    <div class="title">
+        <h1>Puedes descargar mi currículum haciendo click sobre la imagen</h1>
+    </div>
     <div class="cv-row">
-        <h1>Ver y descargar mi Currículum</h1>
-        <a th:href="@{/pdf/curriculum.pdf}" download="CV_Javier_Borreguero.pdf">
-            <div class="cv-col" id="cv-image">
-            </div>
-            <div class="middle">
-                <div class="text">Descargar</div>
-            </div>
-        </a>
+        <div class="cv-column">
+            <a th:href="@{/pdf/curriculum.pdf}" download="CV_Javier_Borreguero.pdf">
+                <div class="cv-col" id="cv-image">
+                    <img src="/images/curriculum.jpg">
+                </div>
+                <div class="middle">
+                    <div class="text">Descargar</div>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
 <section class="footer">
