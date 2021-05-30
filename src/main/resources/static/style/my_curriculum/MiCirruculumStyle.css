@@ -8,7 +8,7 @@
 /* ----------------------------------- */
 /* ---Configuración de la imagen--- */
 .header {
-    min-height: 115vh;
+    height: 1000px;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/portada.jpg");
     background-position: initial;
@@ -114,52 +114,31 @@ nav .fa {
 }
 
 /* Sección Sobre mí */
-.cv {
+.cv-section {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.cv h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.cv p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
 .cv-row {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.cv-col {
-    box-sizing: border-box;
-    float: left;
-    width: 500px;
-    /*padding: 10px;*/
-    height: 1000px;
-    margin-bottom: 10px;
+.cv-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
-
-#cv-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/curriculum.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    /*margin-top: 15px;*/
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
+.cv-column img {
+    width: 700px;
+    height: 1200px;
+    border-radius: 10px;
 }
 
 .middle {
@@ -173,7 +152,7 @@ nav .fa {
     text-align: center;
 }
 
-#cv-image:hover {
+#cv-section:hover {
     opacity: 0.3;
     cursor: pointer;
 
@@ -190,23 +169,21 @@ nav .fa {
     color: black;
 }
 
-.cv:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* --- Footer ---*/
 .footer {
-    padding-top: 950px;
-    padding-bottom: 20px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
 }
 
 .footer h4 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
 }
 
 .icons .fa {
@@ -216,7 +193,7 @@ nav .fa {
 }
 
 /* ---Responsive--- */
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .reporting h1 {
         font-size: 20px;
     }
@@ -272,3 +249,5 @@ nav .fa {
         padding: 30px;
     }
 }
+
+/*-----------------*/

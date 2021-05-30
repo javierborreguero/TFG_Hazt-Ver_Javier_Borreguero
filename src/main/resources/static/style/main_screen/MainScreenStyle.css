@@ -6,9 +6,9 @@
 }
 
 /* ----------------------------------- */
-/* ---Configuración de la imagen--- */
+/* --- Header --- */
 .header {
-    min-height: 115vh;
+    height: 1000px;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/portada.jpg");
     background-position: initial;
@@ -108,22 +108,33 @@ nav img {
     transition: 1s;
 }
 
+/* --- Meú lateral --- */
+nav .fa {
+    display: none;
+}
+
 /* ----------------------------------- */
-/* Sección Sobre mí */
-.about-me {
+/* --- About-me ---*/
+.about-me-section {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.about-me h1 {
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.about-me p {
-    color: #777;
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p {
+    color: #777777;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -131,178 +142,91 @@ nav img {
 }
 
 .about-me-row {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .about-me-col {
-    box-sizing: border-box;
-    float: left;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.about-me-col img {
     width: 200px;
-    padding: 10px;
     height: 200px;
-    margin-bottom: 10px;
-}
-
-#about-me-image-description {
-    width: 500px;
-}
-
-#about-me-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/imagenJavier.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 15px;
-}
-
-.about-me-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --------------- */
-/* --- Trayectoria --- */
-.experienceTrajectory {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 300px;
-}
-
-.experienceTrajectory h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.experienceTrajectory p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.studiesTrajectory {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.studiesTrajectory h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.studiesTrajectory p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-/* --- Experiencia laboral*/
-.experience {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-    padding-top: 20px;
-}
-
-.work-experience {
-    box-sizing: border-box;
-    float: left;
-    width: 200px;
-    padding: 10px;
-    height: 200px;
-    margin-bottom: 10px;
     border-radius: 10px;
 }
 
-#first-work-experience-description {
-    width: 500px;
+/* ----------------------------------- */
+/* --- Primera expiencia laboral --- */
+.first-trajectory-experience-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
 }
 
-#contract {
-    font-weight: bold;
-    display: inline-block;
+.first-trajectory-experience-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#first-work-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/paradigma.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    margin-top: 15px;
+.first-trajectory-experience-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
-.experience:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --- Estudios --- */
-.studies {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-    padding-top: 300px;
-}
-
-.studies-experience {
-    box-sizing: border-box;
-    float: left;
+.first-trajectory-experience-column img {
     width: 200px;
-    padding: 10px;
     height: 200px;
-    margin-bottom: 10px;
     border-radius: 10px;
 }
 
-#my-studies-experience-description {
-    width: 500px;
-    margin-bottom: 10px;
+/* ----------------------------------- */
+/* --- Formación --- */
+.education-trajectory-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
 }
 
-#u-tad-full-name {
-    font-weight: bold;
-    display: inline-block;
+.education-trajectory-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#my-studies-experience {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/utad.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 15px;
+.education-trajectory-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
-.studies:after {
-    content: "";
-    display: table;
-    clear: both;
+.education-trajectory-column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
-/* ------------------- */
-/* --- Meú lateral --- */
-nav .fa {
-    display: none;
-}
-
+/* ----------------------------------- */
 /* --- Footer ---*/
 .footer {
-    padding-top: 600px;
-    padding-bottom: 20px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
 }
 
 .footer h4 {
@@ -318,7 +242,7 @@ nav .fa {
 
 /* ------------------ */
 /* ---Responsive--- */
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .reporting h1 {
         font-size: 20px;
     }
@@ -374,27 +298,17 @@ nav .fa {
         padding: 30px;
     }
 
-    .about-me-col {
-        width: 100%;
-
+    .about-me-row {
+        flex-direction: column;
     }
 
-    .trajectory {
-        padding-top: 300px;
+    .first-trajectory-experience-row {
+        flex-direction: column;
     }
 
-    .work-experience {
-        width: 100%;
+    .education-trajectory-row {
+        flex-direction: column;
     }
-
-    .studies-experience {
-        width: 100%;
-    }
-
-    .studies {
-        padding-top: 300px;
-    }
-
 }
 
 /*-----------------*/

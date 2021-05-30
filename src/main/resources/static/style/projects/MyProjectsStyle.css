@@ -8,7 +8,7 @@
 /* ----------------------------------- */
 /* ---Configuración de la imagen--- */
 .header {
-    min-height: 115vh;
+    height: 1000px;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/primeraportadaproyecto.jpg");
     background-position: initial;
@@ -114,264 +114,146 @@ nav .fa {
 
 /* --------------- */
 
-/* --- Trayectoria --- */
-.battleShipProject {
+/* --- Hundir la flota --- */
+.battleShip-section {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.battleShipProject h1 {
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.battleShipProject p {
-    color: #777;
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p {
+    color: #777777;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
 
-.battleShip {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-    padding-top: 20px;
+.battleShip-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.battleShip-col {
-    box-sizing: border-box;
-    float: left;
+.battleShip-column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.battleShip-column img {
     width: 200px;
-    padding: 10px;
     height: 200px;
-    margin-bottom: 10px;
     border-radius: 10px;
 }
 
-#battleShip-description {
-    width: 500px;
-}
-
-#contract {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#battleShip-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/hundirflota.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    margin-top: 15px;
-}
-
-.battleShip:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+/* ----------------------------------- */
 /* --- Chat --- */
-.chatProject {
+.chat-section {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
-.chatProject h1 {
-    font-size: 36px;
-    font-weight: 600;
+.chat-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.chatProject p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.chat {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-    padding-top: 300px;
-}
-
-.chat-col {
-    box-sizing: border-box;
-    float: left;
-    width: 200px;
-    padding: 10px;
-    height: 200px;
-    margin-bottom: 10px;
+.chat-column {
+    flex-basis: 31%;
     border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
-#chat-description {
-    width: 500px;
-    margin-bottom: 10px;
-}
-
-#contractChat {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#chat-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/chat.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 15px;
-}
-
-.chat:after {
-    content: "";
-    display: table;
-    clear: both;
+.chat-column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 /* --- Vuelos --- */
-.flightProject {
+.flightController-section {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
-.flightProject h1 {
-    font-size: 36px;
-    font-weight: 600;
+.flightController-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.flightProject p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.flightController {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-    padding-top: 600px;
-}
-
-.flightController-col {
-    box-sizing: border-box;
-    float: left;
-    width: 200px;
-    padding: 10px;
-    height: 200px;
-    margin-bottom: 10px;
+.flightController-column {
+    flex-basis: 31%;
     border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
-#flightController-description {
-    width: 500px;
-    margin-bottom: 10px;
-}
-
-#flightContract {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#flightController-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/plain.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 15px;
-}
-
-.flightController:after {
-    content: "";
-    display: table;
-    clear: both;
+.flightController-column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 /* --- Clima --- */
-.weatherProject {
+.weatherApp-section {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
-.weatherProject h1 {
-    font-size: 36px;
-    font-weight: 600;
+.weatherApp-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.weatherProject p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.weather {
-    position: absolute;
-    left: 35%;
-    width: max-content;
-    margin-bottom: 10px;
-    padding-top: 900px;
-}
-
-.weather-col {
-    box-sizing: border-box;
-    float: left;
-    width: 200px;
-    padding: 10px;
-    height: 200px;
-    margin-bottom: 10px;
+.weatherApp-column {
+    flex-basis: 31%;
     border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
-#weather-description {
-    width: 500px;
-    margin-bottom: 10px;
-}
-
-#weatherContract {
-    font-weight: bold;
-    display: inline-block;
-}
-
-#weather-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/aaa.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-top: 15px;
-}
-
-.weather-col:after {
-    content: "";
-    display: table;
-    clear: both;
+.weatherApp-column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 /* ------------ */
 /* --- Footer ---*/
 .footer {
-    padding-top: 1200px;
-    padding-bottom: 20px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10px;
 }
 
 .footer h4 {
@@ -387,7 +269,8 @@ nav .fa {
 
 /* ------------------ */
 /* ---Responsive--- */
-@media (max-width: 600px) {
+
+@media screen and (max-width: 700px) {
     .reporting h1 {
         font-size: 20px;
     }
@@ -443,27 +326,20 @@ nav .fa {
         padding: 30px;
     }
 
-    .battleShipProject {
-        padding-top: 300px;
+    .battleShip-row {
+        flex-direction: column;
     }
 
-    .battleShip-description {
-        width: 100%;
+    .chat-row {
+        flex-direction: column;
     }
 
-    .battleShip-image {
-        width: 100%;
-        padding-top: 20px;
+    .flightController-row {
+        flex-direction: column;
     }
 
-    .chat-image {
-        width: 100%;
-        padding-top: 300px;
-    }
-
-    .chat-description {
-        width: 100%;
-        padding-top: 20px;
+    .weatherApp-row {
+        flex-direction: column;
     }
 }
 
