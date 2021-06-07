@@ -17,16 +17,11 @@ public class EmailService {
     }
 
     public void sendMessage(String to, String subject, String emailContent) {
-//        SimpleMailMessage message = new SimpleMailMessage();
-//        message.setFrom("javiborreguero96@gmail.com");
-//        message.setTo(to);
-//        message.setSubject(subject);
-//        message.setText(emailContent);
-//        javaMailSender.send(message);
+
         try {
             MimeMessage message = javaMailSender.createMimeMessage();
             MimeMessageHelper messageHelper = new MimeMessageHelper(message);
-            messageHelper.setFrom("javiborreguero96@gmail.com", "Hate-Ver");
+            messageHelper.setFrom("javiborreguero96@gmail.com", "Hazt-Ver");
             messageHelper.setTo(to);
             messageHelper.setSubject(subject);
             messageHelper.setText(emailContent);
