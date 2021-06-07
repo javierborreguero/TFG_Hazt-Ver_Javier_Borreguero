@@ -1,10 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Para garantizar una representación adecuada y zoom táctil en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para emplear diferentes iconos -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Para emplear diferentes estilos de fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="/style/main_screen/MainScreenStyle.css" rel="stylesheet">
+    <link href="/images/webIcon.ico" rel="icon">
+    <title>Hazt-Ver</title>
 </head>
 <body>
-
+<!-- Sección para la imagen, la barra de navegación y la presentación -->
+<section class="header" id="aux">
+    <nav>
+        <a class> <img src="/images/webIcon.ico"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a th:href="@{/}" id="start">Inicio</a></li>
+                <li><a th:href="@{/Projects}" id="projects">Proyectos</a></li>
+                <li><a th:href="@{/Cv}" id="cv">Currículum</a></li>
+                <li><a th:href="@{/Contact}" id="contact">Contacto</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+    </nav>
+    <!-- Introducción -->
+    <div class="reporting">
+        <h1>Javier Borreguero</h1>
+        <p>Desarrollador de software y amante de las nuevas tecnologías</p>
+        <a th:href="@{#about-me-section}" class="learn-more">Saber más</a>
+    </div>
+</section>
+<!--Sección sobre mí-->
+<section class="about-me-section" id="about-me-section">
+    <h1>Sobre mí</h1>
+    <div class="about-me-row">
+        <div class="about-me-col">
+            <img src="/images/imagenJavier.jpg">
+        </div>
+        <div class="about-me-col">
+            <h3>Desarrollador de software</h3>
+            <p>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, capacitado para trabajar en entornos
+                back-end y front-end.</p>
+        </div>
+    </div>
+</section>
+<!-- Primera experiencia laboral -->
+<section class="first-trajectory-experience-section">
+    <h1>Mi trayectoria</h1>
+    <div class="first-trajectory-experience-row">
+        <div class="first-trajectory-experience-column">
+            <img src="/images/paradigma.jpg">
+        </div>
+        <div class="first-trajectory-experience-column">
+            <a style="color: black" th:href="@{https://www.paradigmadigital.com/}">
+                <h3>Paradigma Digital</h3>
+            </a>
+            <p id="contract">Desarrollador de Software - Contrato en Prácticas</p>
+            <p>Primera experiencia laboral como desarrollador. Durante esta etapa estoy conociendo el día a día de una
+                consultora dedicada al desarrollo. Está siendo una etapa emocionante en la que estoy aprendiendo la
+                dinámica de trabajo y familiarizándome con nuevas tecnologías, pero sobre todo, me está permitiendo
+                aprender nuevas herramientas y metódicas de desarrollo potenciando los conocimientos aprendidos en el
+                aula.</p>
+        </div>
+    </div>
+</section>
+<!-- Formación -->
+<section class="education-trajectory-section">
+    <div class="education-trajectory-row">
+        <div class="education-trajectory-column">
+            <img src="/images/utad.png">
+        </div>
+        <div class="education-trajectory-column">
+            <a style="color: black" th:href="@{https://u-tad.com}">
+                <h3>U-tad</h3>
+            </a>
+            <p id="u-tad-full-name">Centro Universitario de Tecnología y Arte Digital </p>
+            <p>U-tad es una univeridad puntera en el sector de la tecnología. Cuenta con profesores que además de
+                impartir sus clases en la univerdidad, son empleados en diferentes empresas privada. Brindando la
+                oportunidad de impartir una enseñanza adaptada a la constante evolución de la tecnología. En U-tad, se
+                imparte un enseñanza de calidad en la que priman valores como la constancia y el trabajo en equipo. </p>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<section class="footer">
+    <h4>Javier Borreguero</h4>
+    <p>Desarrollador software</p>
+    <div class="icons">
+        <a style="color: black" th:href="@{https://www.linkedin.com/in/javier-borreguero/}">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://github.com/javierborreguero}">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://www.facebook.com/javier.borreguero.792/}">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://twitter.com/Javier_BdelPozo}">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://www.instagram.com/javiborreguero96/}">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<script src="/js/Script.js" charset="utf-8"></script>
 </body>
 </html>

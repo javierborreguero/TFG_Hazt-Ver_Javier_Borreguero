@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Para garantizar una representación adecuada y zoom táctil en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para emplear diferentes iconos -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Para emplear diferentes estilos de fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="/style/projects/MyProjectsStyle.css" rel="stylesheet">
+    <link href="/images/webIcon.ico" rel="icon">
+    <title>Hazt-Ver</title>
+</head>
+<body>
+<!-- Sección para la imagen la barra de navegación -->
+<section class="header">
+    <nav>
+        <a class> <img src="/images/webIcon.ico"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a th:href="@{/}" id="start">Inicio</a></li>
+                <li><a th:href="@{/Projects}" id="projects">Proyectos</a></li>
+                <li><a th:href="@{/Cv}" id="cv">Currículum</a></li>
+                <li><a th:href="@{/Contact}" id="contact">Contacto</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+    </nav>
+    <div class="reporting">
+        <h1>Proyectos</h1>
+        <p>Conoce mis mejores proyectos</p>
+        <a th:href="@{#battleShipProjectSection}" class="learn-more">Ver proyectos</a>
+    </div>
+</section>
+<section class="battleShip-section" id="battleShipProjectSection">
+    <h1>Mis proyectos</h1>
+    <div class="battleShip-row">
+        <div class="battleShip-column">
+            <img src="/images/hundirflota.png">
+        </div>
+        <div class="battleShip-column">
+            <a style="color: black" th:href="@{https://github.com/javierborreguero/Chat_Hundir_La_Flota_Sockets}">
+                <h3>Hundir la flota</h3>
+            </a>
+            <p id="contract">Java - Sockets</p>
+            <p>El clásico juego de la batalla naval. Al comenzar cada jugador distribibuye sus barcos a lo largo de su
+                tablero. Con todos los barcos bien colocados, comienza una serie de rondas en las que cada jugador debe
+                derribar todos los barcos de su contrincante. Gana el primer en destruir toda la flota rival.
+                Este proyecto está desarrollado con socket stream (TCP), que es un protocolo orientado a conexión, que
+                permite la comunicación entre los distintos jugadores de manera continua.</p>
+        </div>
+    </div>
+</section>
+<section class="chat-section">
+    <div class="chat-row">
+        <div class="chat-column">
+            <img src="/images/chat.jpg">
+        </div>
+        <div class="chat-column">
+            <a style="color: black" th:href="@{https://github.com/javierborreguero/Chat_Hundir_La_Flota_Sockets}">
+                <h3>Chat</h3>
+            </a>
+            <p id="contractChat">Java - Sockets</p>
+            <p>En esta ocasión traigo un chat. En el que dos usuarios intercambian diferentes mensajes.
+                Desarrollado con socket datagram (UDP), sevicios de transporte de información sin conexión.</p>
+        </div>
+    </div>
+</section>
+<section class="flightController-section">
+    <div class="flightController-row">
+        <div class="flightController-column">
+            <img src="/images/plain.jpg">
+        </div>
+        <div class="flightController-column">
+            <a style="color: black" th:href="@{https://github.com/javierborreguero/Gestor_Vuelos}">
+                <h3>Gestor de vuelos</h3>
+            </a>
+            <p id="flightContract">Html - JavaScript - PHP </p>
+            <p>Adentrate en el mundo de las aerolíneas. Con esta aplicación, podrás convertirte en un controlador aéreo
+                y controlar todos los vuelos de una aerolínea, gestionar la compra de billeteset et.
+                Con este Gestor de vuelos, aprenderás a desarrollarte en el mundo del fron-end y del back.
+                Desarrollado con Html, Css, JavaScript y PHP.</p>
+        </div>
+    </div>
+</section>
+<section class="weatherApp-section">
+    <div class="weatherApp-row">
+        <div class="weatherApp-column">
+            <img src="/images/aaa.jpg">
+        </div>
+        <div class="weatherApp-column">
+            <a style="color: black" th:href="@{https://github.com/javierborreguero/Kotlin_WeatherApp}">
+                <h3>App Clima</h3>
+            </a>
+            <p id="weatherContract">Kotlin - SQLite - Volley - Coroutines </p>
+            <p>Accede a tu ciudad y consulta su información metereológica. Con App Clima ya no te pillará desprevenido
+                si llueve o hace frío. Ya que sabrás la temperatura antes de salir de casa.
+                Si eres nuevo en la programación para dispositivos Android y quieres aprender el control de usuario
+                mediante persistencia, como acceder a un servicio de internet o a un API, aprenderás a hacerlo mediante
+                "Volley". También usarás SQLite como base de datos para almacenar toda la información.</p>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <h4>Javier Borreguero</h4>
+    <p>Desarrollador software</p>
+    <div class="icons">
+        <a style="color: black" th:href="@{https://www.linkedin.com/in/javier-borreguero/}">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://github.com/javierborreguero}">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://www.facebook.com/javier.borreguero.792/}">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://twitter.com/Javier_BdelPozo}">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a style="color: black" th:href="@{https://www.instagram.com/javiborreguero96/}">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<script src="/js/Script.js" charset="utf-8"></script>
+</body>
+</html>
